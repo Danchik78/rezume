@@ -6,85 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Даниил,резюме">
     <meta name="description" content="Сайт-Резюме">
+    <link rel="stylesheet" href="style.css">
     <title>Danil Rezume</title>
 </head>
 <body>
-    <img src="img/2023-03-03_15-31-34.png" alt="Даниил" width="300">
+    <div class="container">
 
-    <h1>Сидоренко Даниил</h1>
+        <div class="list">
+            <div class="avatar">
+            <img src="img/2023-03-03_15-31-34.png" alt="Даниил" width="200">
+            </div>
+            
+            <div class="GeneralInfo">
+                <h1>Сидоренко Даниил</h1>
 
-    <p><strong> Хочу научиться програмированию</strong></p>
+                <p>Хочу научиться програмированию</p>
 
-    <p>Люблю <em>спорт, науку, путишествовать</em></p>
+                <p>Люблю: спорт, науку, путишествовать</p>
+            </div>  
+                
+        </div>
 
-    <h4>Любимые сериалы</h4>
+        <div class="card serials">
+            <h4>Любимые сериалы</h4>
 
-    <a href="https://www.youtube.com/watch?v=X4wu533Nihc" target="_blank">Электрические сны Филипа К.Дика</a>
-    |
-    <a href="https://www.youtube.com/watch?v=Z9rlDu8r_CU" target="_blank">Черное зеркало</a>
-    |
-    <a href="https://www.youtube.com/watch?v=Dh1mIO79fxo" target="_blank">Игра престолов</a>
+            <a href="https://www.youtube.com/watch?v=X4wu533Nihc" target="_blank"> Электрические сны Филипа К.Дика</a>
+            |
+            <a href="https://www.youtube.com/watch?v=Z9rlDu8r_CU" target="_blank">Черное зеркало</a>
+            |
+            <a href="https://www.youtube.com/watch?v=Dh1mIO79fxo" target="_blank">Игра престолов</a>
+        </div>
 
-    <h4>Мои хоби</h4>
+        <div class="card hobby">
+            <h4>Мои хоби</h4>
 
-    <ul>
-        <li>Плавание</li>
-        <li>Готовка</li>
-        <li>Баскетбол</li>
-    </ul>
-    
-    <h4>Опыт работы</h4>
+            <ul>
+                <li>Плавание</li>
+                <li>Готовка</li>
+                <li>Баскетбол</li>
+            </ul>
+        </div>
 
-    <table class="work">
-        <thead>
-            <tr>
-                <th>Организация</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Газ-дом</td>
-                <td>Оператор по исследованию</td>
-                <td>2012 - 2019</td>
-            </tr>
-            <tr>
-                <td>Гор-нефть</td>
-                <td>Слесарь</td>
-                <td>2019 - 2020</td>
-            </tr>
-            <tr>
-                <td>Река-море</td>
-                <td>Матрос</td>
-                <td>2020 - н.в.</td>
-            </tr>
-        </tbody>
-    </table>
-<br>
-<h4>Связаться со мной</h4>
+        <div class="card work">
+        <h4>Опыт работы</h4>
 
-<form action="/">
-    <div>
-        <label for="text">Имя:</label>
-        <input type="text" id="text" placeholder="Введите свое имя">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Организация</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Газ-дом</td>
+                        <td>Оператор по исследованию</td>
+                        <td>2012 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Гор-нефть</td>
+                        <td>Слесарь</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Река-море</td>
+                        <td>Матрос</td>
+                        <td>2020 - н.в.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form">
+        <h4>Связаться со мной</h4>
+
+        <form action="/">
+            <div class="feeds">
+                <div>
+                    <label for="text">Имя:</label>
+                    <input type="text" id="text" placeholder="Введите свое имя">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Введите свой email">
+                </div>
+            </div>
+
+            <div class="message">
+                <label for="message">Сообщение:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
+
+            <div class="btn">
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+        </div>
+
+        <div class="in"></div>
+        
     </div>
-
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Введите свой email">
-    </div>
-    <div>
-        <label for="message">Сообщение</label>
-        <br>
-        <textarea name="message" id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
-    </div>
-    <div>
-        <button type="submit">Отправить</button>
-    </div>
-</form>
-   
-
-
 </body>
 </html>
